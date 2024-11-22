@@ -43,7 +43,7 @@ In terms of performance with the same parameters (e.g., hidden layer=100, epoch=
 
 #### a. Deep Q-Learning (DQN)
 
-Deep Q-Learning integrates the classic Q-learning technique with deep neural networks, enabling the handling of high-dimensional state spaces.
+Deep Q-learning integrates the classic Q-learning technique with deep neural networks, enabling the handling of high-dimensional state spaces.
 
 ##### Key Components
 - **Reward Function**: This function defines the rewards given to the agent based on its actions and the resulting state changes.
@@ -52,9 +52,11 @@ Deep Q-Learning integrates the classic Q-learning technique with deep neural net
 
 ##### Formulas and Functions
 - **Q-value Update Rule**:
-   $$
+  
+$$
    Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left( r_{t+1} + \gamma \max_a Q(s_{t+1}, a) - Q(s_t, a_t) \right)
-   $$
+$$
+  
 - **Action Selection**: In DQN, action selection is managed by an ε-greedy policy, which mixes exploration and exploitation to improve learning. The exploration rate is dynamically adjusted as follows:
   $$
   \[
