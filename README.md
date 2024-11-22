@@ -10,4 +10,4 @@ In this study, we used the pre-processed and normalized NSL-KDD dataset as the e
 1. 非监督学习方法
 我们就用的最简单的SVM method。
 最后得出在test data上面的结果如下
-
+![Table 2: Confusion Matrix for SVM](result_SVM/20241118_215457/confusion_matrix.png "Optional Title")
