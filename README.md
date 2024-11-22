@@ -1,6 +1,6 @@
 # Different Machine Learning Methods on Classification Problems
 
-In this project, we will explore various machine learning methodologies including supervised learning, unsupervised learning (SVM), and reinforcement learning (such as Deep Q-Learning and Actor-Critic algorithms) applied to the NSL-KDD dataset for classification tasks, and investigate their advantages and disadvantages.
+In this project, we will ***explore various machine learning methodologies including supervised learning, unsupervised learning (SVM), and reinforcement learning (such as Deep Q-Learning and Actor-Critic algorithms) applied to the NSL-KDD dataset for classification tasks***, and investigate their advantages and disadvantages.
 
 The NSL-KDD dataset consists of network traffic data collected from a simulated computer network environment, featuring both normal and various types of attack activities. This diversity of intrusion scenarios makes the dataset an excellent resource for evaluating the performance of intrusion detection systems.
 
@@ -8,11 +8,11 @@ For this study, we utilized a pre-processed and normalized version of the NSL-KD
 
 ![Table 1: List of features on NSL-KDD dataset](description.png "Optional Title")
 
-Overall, these methods achieve a significant number of True Positives (TP) and True Negatives (TN), and a relatively small number of False Positives (FP), but they tend to have a high number of False Negatives (FN). Current tests are conducted with epochs ranging between 500-1000. Potential improvements could include increasing the number of hidden network layers, as well as the depth of those layers, and possibly extending the number of epochs, given the NSL-KDD dataset includes over 40 attributes.
+Overall, ***these methods achieve a significant number of True Positives (TP) and True Negatives (TN), and a relatively small number of False Positives (FP), but they tend to have a high number of False Negatives (FN)***. Current tests are conducted with epochs ranging between 500-1000. ***Potential improvements could include increasing the number of hidden network layers, as well as the depth of those layers, and possibly extending the number of epochs, given the NSL-KDD dataset includes over 40 attributes.***
 
-Generally, the results across the models are comparable, with accuracies and F1-scores around 0.78-0.82, recall rates at 0.68-0.72, and precision ranging from 0.93-0.95. These results indicate a high correctness rate among positive predictions by the models, though they still miss identifying some true positives, classifying them as negatives instead. Adjustments as mentioned above might be required to address these issues.
+Generally, the results across the models are comparable, with ***accuracies and F1-scores around 0.78-0.82***, ***recall rates at 0.68-0.72***, and ***precision ranging from 0.93-0.95***. These results indicate a ***high correctness rate among positive predictions by the models, though they still miss identifying some true positives, classifying them as negatives instead***. Adjustments as mentioned above might be required to address these issues.
 
-In terms of performance with the same parameters (e.g., hidden layer=100, epoch=1000, learning rate=0.1), the training results rank as follows: SVM > DQN ≥ Actor-Critic ≥ Supervised Learning. Increasing the epochs tends to improve model performance to a certain extent, but limitations remain.
+In terms of performance with the same parameters (e.g., hidden layer=100, epoch=1000, learning rate=0.1), the training results rank as follows: ***SVM > DQN ≥ Actor-Critic ≥ Supervised Learning***. Increasing the epochs tends to improve model performance to a certain extent, but limitations remain.
 
 1. **Unsupervised Learning Method**
    We employed the simple SVM method. The results on the test data are shown below:
