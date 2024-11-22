@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     env = RLenv(kdd_path)
     model = Net(env.state_shape, hidden_size, num_actions).to(device)
-    optimizer = optim.SGD(model.parameters(), lr=learning_rate) # xuzhuoning change this line
+    optimizer = optim.SGD(model.parameters(), lr=learning_rate) 
     criterion = nn.MSELoss()
 
     reward_chain = []
