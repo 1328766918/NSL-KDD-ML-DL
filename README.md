@@ -115,9 +115,9 @@ Actor-Critic methods use two models: one to generate the policy (actor) and anot
   $$
   Where $\( A(s, a) \)$ is the advantage function, computed as $\( r + \gamma V(s') - V(s) \)$.
 - **Critic Loss**:
-  $$
+  $
   L(w) = \left(r + \gamma V(s', w) - V(s, w)\right)^2
-  $$
+  $
   Where $\( w \)$ are the parameters of the critic network.
 
 These methods provide robust frameworks for solving complex reinforcement learning problems, particularly in environments with large or continuous state and action spaces. The results with different epochs are shown in the attached folder.
